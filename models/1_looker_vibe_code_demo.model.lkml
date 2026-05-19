@@ -2,6 +2,7 @@ connection: "bigquery_test"
 
 # include all the views
 include: "/views/**/*.view.lkml"
+include: "/dashboards/**/*.dashboard.lookml"
 
 datagroup: 1_looker_vibe_code_demo_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
