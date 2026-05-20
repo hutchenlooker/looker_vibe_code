@@ -35,4 +35,10 @@ view: +order_items {
     type: count_distinct
     sql: ${order_id} ;;
   }
+
+  measure: average_revenue_per_order {
+    type: number
+    sql: ${total_revenue} / NULLIF(${order_count}, 0) ;;
+    value_format_name: usd
+  }
 }
