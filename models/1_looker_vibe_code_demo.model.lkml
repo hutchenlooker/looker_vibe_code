@@ -4,6 +4,8 @@ connection: "bigquery_test"
 include: "/views/**/*.view.lkml"
 include: "/dashboards/**/*.dashboard.lookml"
 
+
+
 datagroup: 1_looker_vibe_code_demo_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
   max_cache_age: "1 hour"
